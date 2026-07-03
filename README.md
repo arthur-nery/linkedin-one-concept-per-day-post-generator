@@ -99,6 +99,7 @@ Available versions:
 
 - `v1.0` — initial daily LinkedIn post generator prompt.
 - `v1.1` — Python 1 Per Day formatter with special megaproject workflow.
+- `v1.1.1` — enxuto version of v1.1, reduced to fit an 8k character limit.
 
 Future versions may improve:
 
@@ -117,7 +118,7 @@ Use the latest prompt file from the `prompt/` folder.
 Current version:
 
 ```text
-prompt/linkedin-formatter-python-1-per-day-v1.1.md
+prompt/linkedin-formatter-python-1-per-day-v1.1.1-enxuto.md
 ```
 
 Send the prompt to ChatGPT or another LLM, then provide:
@@ -154,9 +155,9 @@ The generated post should explain the progress in simple words and avoid soundin
 
 ## Project Status
 
-Current status: **v1.1 active**.
+Current status: **v1.1.1 active**.
 
-The prompt now supports both normal daily posts and special megaproject posts for the Python 1 Per Day progression.
+The prompt now supports both normal daily posts and special megaproject posts for the Python 1 Per Day progression, with an enxuto version designed for environments with an 8k character limit.
 
 ---
 
@@ -191,7 +192,7 @@ See the `LICENSE` file for details.
 ## Main Prompt File
 
 ```text
-prompt/linkedin-formatter-python-1-per-day-v1.1.md
+prompt/linkedin-formatter-python-1-per-day-v1.1.1-enxuto.md
 ```
 
 ---
@@ -200,6 +201,7 @@ prompt/linkedin-formatter-python-1-per-day-v1.1.md
 
 ```text
 prompt/linkedin-one-concept-per-day-post-generator-v1.0.md
+prompt/linkedin-formatter-python-1-per-day-v1.1.md
 ```
 
 ---
