@@ -1,6 +1,6 @@
 # LinkedIn One Concept Per Day Post Generator
 
-A periodically updated prompt repository for generating simple, honest LinkedIn posts from daily Ruby and Python learning progress, using notebook photos, Nano screenshots, Termux outputs, and GitHub file links.
+A periodically updated prompt repository for generating simple, honest LinkedIn posts from daily programming learning progress, using notebook photos, Nano screenshots, Termux outputs, and GitHub file links.
 
 ---
 
@@ -8,7 +8,7 @@ A periodically updated prompt repository for generating simple, honest LinkedIn 
 
 **LinkedIn One Concept Per Day Post Generator** is a prompt system designed to transform daily programming study evidence into LinkedIn posts.
 
-It is focused on a public learning routine where each post documents one concept studied per day.
+It is focused on a public learning routine where each post documents one programming concept per day, with special milestone posts for simple megaprojects.
 
 The prompt receives inputs such as:
 
@@ -28,10 +28,14 @@ The objective of this repository is to document and improve a reusable prompt fo
 
 The current focus is:
 
-- Ruby on Rails;
-- Python.
+- Python;
+- GitHub;
+- Terminal;
+- Linux/Termux;
+- learning in public;
+- portfolio building.
 
-The prompt avoids sounding overly senior, avoids advanced tutorials, and keeps the focus on real learning, simple practice, and consistency.
+Ruby on Rails may still be mentioned as part of the broader stack, but the current daily progression focus is **Python 1 Per Day**.
 
 ---
 
@@ -43,12 +47,15 @@ The prompt follows a fixed workflow:
 2. Analyze code screenshots from Nano.
 3. Analyze terminal outputs from Termux.
 4. Identify the day of the learning progression.
-5. Identify the programming language.
-6. Identify the main concept of the day.
-7. Use the visible code only to understand the exercise.
-8. Avoid copying the full code into the post.
-9. Ask for the GitHub file link if it was not provided.
-10. Generate a ready-to-copy LinkedIn post.
+5. Identify whether the post is a daily post or a megaproject post.
+6. Identify the programming language.
+7. Identify the main concept of the day, when it is a normal daily post.
+8. Identify the project objective, when it is a megaproject post.
+9. Use the visible code only to understand the exercise.
+10. Avoid copying the full code into the post.
+11. Ask for the GitHub file link if it was not provided.
+12. Ask whether there was any inspiration, suggestion, or indication from someone.
+13. Generate a ready-to-copy LinkedIn post.
 
 ---
 
@@ -58,7 +65,8 @@ The generated post must:
 
 - use simple and honest language;
 - sound like a beginner documenting real progress;
-- focus on only one concept per day;
+- focus on only one concept for normal daily posts;
+- treat megaproject posts as integration milestones, not advanced systems;
 - avoid full code blocks;
 - use the GitHub link instead of copying code;
 - end with `One step at a time.`;
@@ -67,33 +75,49 @@ The generated post must:
 
 ---
 
+## Progression Cycle
+
+The current cycle is:
+
+```text
+Days 1-14  -> daily posts with 1 concept per day
+Day 15     -> special megaproject post
+Days 16-29 -> daily posts with 1 concept per day
+Day 30     -> special megaproject post
+Repeat
+```
+
+The megaproject is not meant to be a large professional system. It is a simple integration project that connects what was learned so far.
+
+---
+
 ## Versioning
 
 This repository is designed to be updated periodically.
 
-The first version is:
+Available versions:
 
 - `v1.0` — initial daily LinkedIn post generator prompt.
+- `v1.1` — Python 1 Per Day formatter with special megaproject workflow.
 
 Future versions may improve:
 
-- GitHub link handling;
-- support for special project days;
 - banner generation handoff;
-- clearer rules for mega projects;
-- better handling of ambiguous images;
-- better separation between daily posts and special posts.
+- clearer rules for visual post assets;
+- real examples from published posts;
+- testing scenarios for daily posts and megaproject posts;
+- GitHub link and commit handling.
 
 ---
 
 ## Quick Start
 
-Use the prompt file from the `prompt/` folder.
+Use the latest prompt file from the `prompt/` folder.
 
 Current version:
 
 ```text
-prompt/linkedin-one-concept-per-day-post-generator-v1.0.md
+prompt/linkedin-formatter-python-1-per-day-v1.1.md
 ```
 
 Send the prompt to ChatGPT or another LLM, then provide:
@@ -108,7 +132,7 @@ The model should return a LinkedIn post in Markdown, without including the full 
 
 ---
 
-## Example Use Case
+## Example Use Cases
 
 A daily Python post may use:
 
@@ -117,15 +141,22 @@ A daily Python post may use:
 - a Termux screenshot showing the result;
 - a GitHub link to the file.
 
-The generated post should explain the concept in simple words and present the learning progress without sounding advanced.
+A megaproject post may use:
+
+- a notebook photo explaining the project idea;
+- a Nano screenshot showing the project file;
+- Termux screenshots with test runs;
+- a GitHub link to the megaproject file.
+
+The generated post should explain the progress in simple words and avoid sounding advanced.
 
 ---
 
 ## Project Status
 
-Current status: **v1.0 active**.
+Current status: **v1.1 active**.
 
-This is the initial version of the prompt and may evolve as the public learning workflow becomes more complete.
+The prompt now supports both normal daily posts and special megaproject posts for the Python 1 Per Day progression.
 
 ---
 
@@ -133,9 +164,9 @@ This is the initial version of the prompt and may evolve as the public learning 
 
 Planned improvements:
 
-- Add `v1.1` with special handling for mega project posts.
-- Improve banner-generation handoff instructions.
-- Add examples for Python and Ruby posts.
+- Add banner-generation handoff instructions.
+- Add examples for normal Python posts.
+- Add examples for megaproject posts.
 - Add tests with real post scenarios.
 - Add clearer rules for commit/GitHub link updates.
 
@@ -158,6 +189,14 @@ See the `LICENSE` file for details.
 ---
 
 ## Main Prompt File
+
+```text
+prompt/linkedin-formatter-python-1-per-day-v1.1.md
+```
+
+---
+
+## Previous Versions
 
 ```text
 prompt/linkedin-one-concept-per-day-post-generator-v1.0.md
