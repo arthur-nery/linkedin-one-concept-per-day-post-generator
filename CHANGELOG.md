@@ -5,10 +5,27 @@ All notable changes to this project will be documented in this file.
 This repository follows a simple versioning model:
 
 ```text
-v1.0 -> v1.1 -> v1.2 -> ...
+v1.0 -> v1.1 -> v1.1.1 -> v1.2 -> ...
 ```
 
 Each version should represent a meaningful improvement to the prompt workflow.
+
+---
+
+## [v1.1.1] - 2026-07-02
+
+### Added
+
+- Added an enxuto version of the v1.1 LinkedIn Formatter.
+- Added a prompt version designed to stay under an 8k character limit.
+- Added the current prompt file: `prompt/linkedin-formatter-python-1-per-day-v1.1.1-enxuto.md`.
+
+### Changed
+
+- Reduced the length of v1.1 while preserving the core workflow.
+- Kept both daily post mode and Megaproject mode.
+- Kept GitHub link handling, indication/suggestion question, hashtag rules, and Markdown output rules.
+- Updated the README current version from `v1.1` to `v1.1.1`.
 
 ---
 
