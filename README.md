@@ -55,7 +55,8 @@ The prompt follows a fixed workflow:
 10. Avoid copying the full code into the post.
 11. Ask for the GitHub file link if it was not provided.
 12. Ask whether there was any inspiration, suggestion, or indication from someone.
-13. Generate a ready-to-copy LinkedIn post.
+13. Ask whether there is a specific observation to include in the final observation field.
+14. Generate a ready-to-copy LinkedIn post.
 
 ---
 
@@ -69,6 +70,8 @@ The generated post must:
 - treat megaproject posts as integration milestones, not advanced systems;
 - avoid full code blocks;
 - use the GitHub link instead of copying code;
+- ask the two required pre-publication questions before generating the final post;
+- include a short final observation field;
 - end with `One step at a time.`;
 - use up to 6 hashtags;
 - avoid inventing details not visible in the images or explanation.
@@ -100,6 +103,7 @@ Available versions:
 - `v1.0` — initial daily LinkedIn post generator prompt.
 - `v1.1` — Python 1 Per Day formatter with special megaproject workflow.
 - `v1.1.1` — enxuto version of v1.1, reduced to fit an 8k character limit.
+- `v1.1.2` — enxuto version with two required questions before generating the final post: inspiration/indication and final observation.
 
 Future versions may improve:
 
@@ -118,7 +122,7 @@ Use the latest prompt file from the `prompt/` folder.
 Current version:
 
 ```text
-prompt/linkedin-formatter-python-1-per-day-v1.1.1-enxuto.md
+prompt/linkedin-formatter-python-1-per-day-v1.1.2-enxuto.md
 ```
 
 Send the prompt to ChatGPT or another LLM, then provide:
@@ -129,7 +133,7 @@ Send the prompt to ChatGPT or another LLM, then provide:
 - a short explanation if needed;
 - the GitHub file link.
 
-The model should return a LinkedIn post in Markdown, without including the full code.
+The model should ask the two required pre-publication questions before returning the final LinkedIn post in Markdown, without including the full code.
 
 ---
 
@@ -155,9 +159,9 @@ The generated post should explain the progress in simple words and avoid soundin
 
 ## Project Status
 
-Current status: **v1.1.1 active**.
+Current status: **v1.1.2 active**.
 
-The prompt now supports both normal daily posts and special megaproject posts for the Python 1 Per Day progression, with an enxuto version designed for environments with an 8k character limit.
+The prompt now supports normal daily posts and special megaproject posts for the Python 1 Per Day progression, with an enxuto version designed for environments with an 8k character limit. The active version also requires two questions before generating the final post: one about inspiration/indication and one about the final observation field.
 
 ---
 
@@ -170,6 +174,7 @@ Planned improvements:
 - Add examples for megaproject posts.
 - Add tests with real post scenarios.
 - Add clearer rules for commit/GitHub link updates.
+- Add examples for the final observation field.
 
 ---
 
@@ -192,7 +197,7 @@ See the `LICENSE` file for details.
 ## Main Prompt File
 
 ```text
-prompt/linkedin-formatter-python-1-per-day-v1.1.1-enxuto.md
+prompt/linkedin-formatter-python-1-per-day-v1.1.2-enxuto.md
 ```
 
 ---
@@ -202,6 +207,7 @@ prompt/linkedin-formatter-python-1-per-day-v1.1.1-enxuto.md
 ```text
 prompt/linkedin-one-concept-per-day-post-generator-v1.0.md
 prompt/linkedin-formatter-python-1-per-day-v1.1.md
+prompt/linkedin-formatter-python-1-per-day-v1.1.1-enxuto.md
 ```
 
 ---
