@@ -5,10 +5,29 @@ All notable changes to this project will be documented in this file.
 This repository follows a simple versioning model:
 
 ```text
-v1.0 -> v1.1 -> v1.1.1 -> v1.2 -> ...
+v1.0 -> v1.1 -> v1.1.1 -> v1.1.2 -> v1.2 -> ...
 ```
 
 Each version should represent a meaningful improvement to the prompt workflow.
+
+---
+
+## [v1.1.2] - 2026-07-06
+
+### Added
+
+- Added a new enxuto prompt version: `prompt/linkedin-formatter-python-1-per-day-v1.1.2-enxuto.md`.
+- Added two required questions before generating the final post:
+  - inspiration, tip, suggestion, or indication;
+  - specific observation for the final `Observação` field.
+- Added rules for adapting the final observation field in a short and useful way.
+
+### Changed
+
+- Updated the active version from `v1.1.1` to `v1.1.2`.
+- Updated the README current prompt path to `prompt/linkedin-formatter-python-1-per-day-v1.1.2-enxuto.md`.
+- Replaced the previous single indication flow with a clearer pre-publication question flow.
+- Kept the prompt aligned with the 8k character limit.
 
 ---
 
@@ -82,3 +101,4 @@ Potential improvements:
 - Add example inputs and outputs for daily posts.
 - Add example inputs and outputs for Megaproject posts.
 - Add testing scenarios for common cases.
+- Add examples for the final observation field.
